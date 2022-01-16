@@ -1,0 +1,58 @@
+CREATE TABLE User (
+    idUser INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    pseudo VARCHAR(40) NOT NULL,
+    date_creation DATETIME NOT NULL,
+    nom VARCHAR(30),
+    prenom VARCHAR(30);
+    commentaires TEXT,
+    PRIMARY KEY (idUser)
+)
+CREATE TABLE Preferences (
+    idUser INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    equipe VARCHAR(40),
+    PRIMARY KEY (idUser)
+)
+CREATE TABLE Matches (
+    id INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    date DATETIME NOT NULL;
+    scoreeq1 SMALLINT,
+    scoreeq2 SMALLINT,
+    ideq1 SMALLINT UNSIGNED;
+    ideq2 SMALLINT UNSIGNED;
+    vainqueur VARCHAR(40),
+    PRIMARY KEY (id)
+)
+CREATE TABLE But (
+    idmatch INT UNSIGNED NOT NULL,
+    idjoueur INT UNSIGNED,
+    csc TINYINT,
+    minute TIME,
+    scoreeq2 SMALLINT,
+    penalty SMALLINT UNSIGNED;
+    PRIMARY KEY (idmatch)
+)
+CREATE TABLE Joueurs (
+    idjoueur INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    idEqu SMALLINT UNSIGNED NOT NULL;
+    poste VARCHAR(40),
+    statut VARCHAR(15),
+    nom VARCHAR(20),
+    prenom VARCHAR(20),
+    PRIMARY KEY (idjoueur)
+)
+CREATE TABLE EQUIPES (
+    idEq  SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT;
+    idChampionnat TINYINT UNSIGNED NOT NULL,
+    nom VARCHAR(40),
+    PRIMARY KEY (idEq)
+)
+CREATE TABLE Cotes (
+    idMatch INT UNSIGNED NOT NULL;
+    idEq1 SMALLINT UNSIGNED NOT NULL;
+    idEq2 SMALLINT UNSIGNED NOT NULL;
+    coteEq1v DOUBLE UNSIGNED,
+    coteNull DOUBLE UNSIGNED,
+    coteEq2v DOUBLE UNSIGNED,
+    PRIMARY KEY (idMatch)
+)
+ENGINE=INNODB;
