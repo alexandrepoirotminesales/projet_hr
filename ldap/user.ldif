@@ -1,0 +1,49 @@
+dn: ou=GEST,dc=example,dc=com
+objectclass: organizationalUnit
+ou: GEST
+description: GESTionnaire
+
+
+dn: ou=PREMIUM,dc=example,dc=com
+objectclass: organizationalUnit
+ou: PREMIUM
+description: premimum
+
+dn: ou=FREE,dc=example,dc=com
+objectclass: organizationalUnit
+ou: FREE
+description: free
+
+
+dn: cn=frere,ou=GEST,dc=example,dc=com
+objectclass: inetorgperson
+cn: frere
+sn: jacques
+gn: jacques
+ou: GEST
+
+
+dn: cn=michel,ou=PREMIUM,dc=example,dc=com
+objectclass: inetorgperson
+cn: michel
+sn: mere
+displayName: mere michel
+gn: michel
+ou: PREMIUM
+
+
+dn: cn=personne1,ou=FREE,dc=example,dc=com
+objectclass: inetorgperson
+cn: personne1
+sn: nom1
+description: personne inconnue.
+ou: FREE
+
+
+
+dn: cn=personne2,ou=FREE,dc=example,dc=com
+objectclass: inetorgperson
+cn: personne2
+sn: nom2
+description: autre personne inconnue.
+ou: FREE
