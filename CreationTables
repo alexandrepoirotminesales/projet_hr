@@ -50,10 +50,9 @@ CREATE TABLE Cotes (
     idMatch INT UNSIGNED NOT NULL;
     idEq1 SMALLINT UNSIGNED NOT NULL;
     idEq2 SMALLINT UNSIGNED NOT NULL;
-    coteEq1v DOUBLE UNSIGNED,
-    coteNull DOUBLE UNSIGNED,
-    coteEq2v DOUBLE UNSIGNED
-    )
+    coteEq1v DOUBLE,
+    coteNull DOUBLE,
+    coteEq2v DOUBLE,
     PRIMARY KEY (idMatch)
 )
 ENGINE=INNODB;
