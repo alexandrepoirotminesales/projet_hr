@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class RestControllerEx {
     
 
-    @GetMapping("/userexemple")
+    @GetMapping("/users")
     public List<User> getUsers() {
 
         List <User>  result =  new ArrayList<>();

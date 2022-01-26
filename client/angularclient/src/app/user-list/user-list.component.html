@@ -1,0 +1,21 @@
+
+<div class="card my-5">
+  <div class="card-body">
+    <table class="table table-bordered table-striped" aria-describedby="mydesc">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">prenom</th>
+          <th scope="col">nom</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of users">
+          <td>{{ user.id }}</td>
+          <td>{{ user.prenom }}</td>
+          <td>{{ user.nom }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
