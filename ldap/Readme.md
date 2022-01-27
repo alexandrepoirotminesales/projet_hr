@@ -10,3 +10,7 @@ Pour lancer l'image docker
 
 2. run docker img : 
  `docker run -dt --name apacheds_container -p 389:10389 -p 636:10636 apacheds:apacheds` 
+ 
+ ## Tips
+ 
+ Pour acceder au ldap il est possible d'utiliser apache directory studio la configuration est celle par défaut.
