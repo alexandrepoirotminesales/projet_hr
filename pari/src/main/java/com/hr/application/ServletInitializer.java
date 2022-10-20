@@ -1,4 +1,5 @@
-package com.hr.site.pari;
+package com.hr.application;
+
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;

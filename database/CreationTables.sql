@@ -55,4 +55,3 @@ CREATE TABLE Cotes (
     coteEq2v DOUBLE UNSIGNED,
     PRIMARY KEY (idMatch)
 );
-ENGINE=INNODB;
